@@ -16,9 +16,10 @@ mongoose.connect(
 
 app.use(bodyParser.json());
 
-// ROUTES
+// ROUTE
 require("./routes/creatureRoutes")(app);
 require("./routes/verbRoutes")(app);
+require("./routes/ideaRoutes")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../frontend/dev"));

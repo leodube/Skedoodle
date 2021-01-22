@@ -7,11 +7,6 @@ module.exports = (app) => {
     return res.status(200).send(creatures);
   });
 
-  app.get(`/api/creature/random`, async (req, res) => {
-    let creature = await Creature.aggregate([{$sample: {size:1}}]);
-    return res.status(200).send(creature);
-  })
-
   app.post(`/api/creature`, async (req, res) => {
     let creature = await Creature.create(req.body);
     return res.status(201).send({
