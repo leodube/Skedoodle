@@ -42,16 +42,16 @@ module.exports = {
     compress: true,
     port: 3000,
     hotOnly: true,
+    proxy: {
+      "/api": "http://localhost:5000",
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new ImageMinimizerPlugin({
       minimizerOptions: {
-        plugins: [
-          ["mozjpeg"],
-          ["pngquant"],
-        ],
+        plugins: [["mozjpeg"], ["pngquant"]],
       },
     }),
     new HtmlWebpackPlugin({
