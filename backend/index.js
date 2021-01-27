@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+const DBNAME = process.env.DB_USER 
+const DBPASSWORD = process.env.DB_PASS
 const uri =
-  "mongodb+srv://leodube:YojrLx4PhMi6qhq5@cluster0.bauqt.mongodb.net/skedoodle?retryWrites=true&w=majority";
+  `mongodb+srv://${DBNAME}:${DBPASSWORD}@cluster0.bauqt.mongodb.net/skedoodle?retryWrites=true&w=majority`;
 
 // MODELS
 require("./models/Creature");
