@@ -7,9 +7,9 @@ const CodeLink = () => {
       href="https://github.com/leodube/skedoodle"
       target="_blank"
       role="button"
-      className="btn btn-lg mb-3 mr-1 code-link"
+      className="btn btn-lg mb-3 mr-2 code-link"
     >
-      <span className="icon mr-4">
+      <span className="icon">
         <img src={githubIcon} height="30" width="30" alt=""></img>
       </span>
     </a>

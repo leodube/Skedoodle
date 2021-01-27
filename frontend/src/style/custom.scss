@@ -20,13 +20,13 @@
 
 .idea {
   font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .idea-bold {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -81,12 +81,6 @@
 @include media-breakpoint-up(sm) { 
   #main {
     font-size: 5rem;
-  }
-  .idea {
-    font-size: 1rem;
-  }
-  .idea-bold {
-    font-size: 1.2rem;
   }
   .def-pronunciation {
     font-size: 1rem;
