@@ -30,6 +30,18 @@ module.exports = {
         test: /\.(scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "./font/[hash].[ext]",
+              outputPath: "fonts",
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },

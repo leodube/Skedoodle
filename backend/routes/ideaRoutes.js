@@ -13,6 +13,15 @@ module.exports = (app) => {
       let creature = await Creature.aggregate([{ $sample: { size: 1 } }]);
       let verb = await Verb.aggregate([{ $sample: { size: 1 } }]);
 
+      // check selected verb is apparently random enough
+      // here we want to decrease occurence of solo verbs (aren't followed by anything)
+      if (verb[0].followWith == "none") {
+        if (Math.floor(Math.random() * 6) < 5) {
+          continue;
+        }
+      }
+
+      // check verb is valid with creature selection
       if (creature[0].verbExemptions.includes(verb[0].name)) {
         continue;
       } else {
@@ -20,6 +29,7 @@ module.exports = (app) => {
         idea.text.push(creature[0].precedeWith, creature[0].name);
       }
 
+      // build rest of idea phrase
       switch(verb[0].followWith) {
         case "none":
           idea.text.push(verb[0].name);

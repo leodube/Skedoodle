@@ -1,0 +1,133 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+// custom fonts
+@font-face {
+  font-family: 'BeautyBright';
+  src: url('../fonts/Beauty\ Bright\ Personal\ Use.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('../fonts/American\ Typewriter\ Regular.ttf') format('truetype');
+}
+
+// text themes
+#main {
+  font-family: 'BeautyBright', sans-serif;
+  font-size: 4rem;
+}
+
+.idea {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.idea-bold {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.def-pronunciation {
+  font-family: "AmericanTypewriter";
+  font-size: 0.8rem;
+  //color: #818081;
+}
+
+.def-type {
+  font-family: "AmericanTypewriter";
+  font-size: 0.8rem;
+}
+
+.def-definition {
+  font-family: "AmericanTypewriter";
+  font-size: 0.6rem;
+}
+
+.cl-text {
+  font-family: "AmericanTypewriter";
+  font-size: 1rem;
+}
+
+// app themes
+.App {
+  background: radial-gradient(#ffb74d, #ffa726);
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.definition {
+  position: absolute;
+  bottom: 0;
+}
+
+.code-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+// text theme mixins
+@include media-breakpoint-up(sm) { 
+  #main {
+    font-size: 5rem;
+  }
+  .idea {
+    font-size: 1rem;
+  }
+  .idea-bold {
+    font-size: 1.2rem;
+  }
+  .def-pronunciation {
+    font-size: 1rem;
+  }
+  .def-type {
+    font-size: 1rem;
+  }
+  .def-definition {
+    font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #main {
+    font-size: 6rem;
+  }
+  .idea {
+    font-size: 1.2rem;
+  }
+  .idea-bold {
+    font-size: 1.5rem;
+  }
+  .def-pronunciation {
+    font-size: 1.2rem;
+  }
+  .def-type {
+    font-size: 1.2rem;
+  }
+  .def-definition {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #main {
+    font-size: 7rem;
+  }
+  .idea {
+    font-size: 1.5rem;
+  }
+  .idea-bold {
+    font-size: 2rem;
+  }
+}

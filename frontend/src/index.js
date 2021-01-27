@@ -1,4 +1,4 @@
-import "./custom.scss";
+import "./style/custom.scss";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.js";
