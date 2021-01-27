@@ -4,7 +4,7 @@ import githubIcon from "../images/github.svg";
 const CodeLink = () => {
   return (
     <a
-      href="https://github.com/leodube"
+      href="https://github.com/leodube/skedoodle"
       target="_blank"
       role="button"
       className="btn btn-lg mb-3 mr-1 code-link"
