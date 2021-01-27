@@ -3,8 +3,11 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const DBNAME = process.env.DB_USER 
-const DBPASSWORD = process.env.DB_PASS
+//const DBNAME = process.env.DB_USER 
+//const DBPASSWORD = process.env.DB_PASS
+const DBNAME = "leodube"
+const DBPASSWORD="YojrLx4PhMi6qhq5"
+
 const uri =
   `mongodb+srv://${DBNAME}:${DBPASSWORD}@cluster0.bauqt.mongodb.net/skedoodle?retryWrites=true&w=majority`;
 
