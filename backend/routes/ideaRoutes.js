@@ -5,7 +5,7 @@ const Verb = mongoose.model("verbs");
 module.exports = (app) => {
   app.get(`/api/idea/new`, async (req, res) => {
     let idea = {
-      text: []
+      text: [],
     };
     let valid = false;
 
@@ -30,16 +30,21 @@ module.exports = (app) => {
       }
 
       // build rest of idea phrase
-      switch(verb[0].followWith) {
+      switch (verb[0].followWith) {
         case "none":
           idea.text.push(verb[0].name);
           break;
         case "creature":
           let creature2 = await Creature.aggregate([{ $sample: { size: 1 } }]);
-          idea.text.push(verb[0].name, creature2[0].precedeWith, creature2[0].name);
+          idea.text.push(
+            verb[0].name,
+            creature2[0].precedeWith,
+            creature2[0].name
+          );
           break;
         case "item":
-          let item = verb[0].items[Math.floor(Math.random()*verb[0].items.length)];
+          let item =
+            verb[0].items[Math.floor(Math.random() * verb[0].items.length)];
           idea.text.push(verb[0].name, item);
           break;
       }

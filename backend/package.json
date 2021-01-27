@@ -6,7 +6,7 @@
     "node": "14.15.1",
     "npm": "6.14.8"
   },
-    "scripts": {
+  "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -16,6 +16,7 @@
   "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.12"
   },
