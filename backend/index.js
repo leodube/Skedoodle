@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 require("./routes/creatureRoutes")(app);
 require("./routes/verbRoutes")(app);
 require("./routes/ideaRoutes")(app);
+app.get("/", (req, res) => {
+  res.send("Skedoodle backend");
+});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../frontend/dev"));
