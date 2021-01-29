@@ -34,9 +34,21 @@ const Idea = () => {
 
   return (
     <div className="idea">
-      {idea ? renderIdea(idea) : <h3> </h3>}
+      {idea ? (
+        renderIdea(idea)
+      ) : (
+        <div class="d-flex justify-content-center">
+          <div className="spinner-grow" role="status">
+            <span className="sr-only">Loading...</span>
+          </div>
+        </div>
+      )}
       <div className="d-flex justify-content-center mt-3">
-        <button type="button" className="btn btn-sm btn-outline-dark mt-3" onClick={getIdea}>
+        <button
+          type="button"
+          className="btn btn-sm btn-outline-dark mt-3"
+          onClick={getIdea}
+        >
           New Idea
         </button>
       </div>
