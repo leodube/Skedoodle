@@ -1,20 +1,20 @@
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 // custom fonts
 @font-face {
-  font-family: 'BeautyBright';
-  src: url('../fonts/Beauty\ Bright\ Personal\ Use.ttf') format("truetype");
+  font-family: "BeautyBright";
+  src: url("../fonts/Beauty\ Bright\ Personal\ Use.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'AmericanTypewriter';
-  src: url('../fonts/American\ Typewriter\ Regular.ttf') format('truetype');
+  font-family: "AmericanTypewriter";
+  src: url("../fonts/American\ Typewriter\ Regular.ttf") format("truetype");
 }
 
 // text themes
 #main {
-  font-family: 'BeautyBright', sans-serif;
+  font-family: "BeautyBright", sans-serif;
   font-size: 4rem;
   line-height: 4.1rem;
 }
@@ -53,8 +53,21 @@
 }
 
 // app themes
-.App {
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   background: radial-gradient(#ffb74d, #ffa726);
+}
+
+.App {
+  width: 100vw;
+  height: 100%;
+  min-height:100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-content {
@@ -79,7 +92,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 // text theme mixins
-@include media-breakpoint-up(sm) { 
+@include media-breakpoint-up(sm) {
   #main {
     font-size: 5rem;
   }

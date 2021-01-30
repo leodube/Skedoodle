@@ -37,7 +37,7 @@ const Idea = () => {
       {idea ? (
         renderIdea(idea)
       ) : (
-        <div class="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
           <div className="spinner-grow" role="status">
             <span className="sr-only">Loading...</span>
           </div>

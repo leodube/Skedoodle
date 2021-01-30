@@ -5,7 +5,7 @@ import { CodeLink, Idea, Definition } from "./components";
 
 const App = () => {
   return (
-    <div className="App vh-100">
+    <div className="App">
       <div className="container main-content">
         <div className="row justify-content-center">
           <h1 id="main" className="text-center">
