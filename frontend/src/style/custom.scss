@@ -54,8 +54,7 @@
 
 // app themes
 html {
-  min-height: -webkit-fill-available;
-  //height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   background: radial-gradient(#ffb74d, #ffa726);
 }
 
