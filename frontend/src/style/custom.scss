@@ -14,9 +14,9 @@
 
 // text themes
 #main {
+  line-height: 4.1rem;
   font-family: "BeautyBright", sans-serif;
   font-size: 4rem;
-  line-height: 4.1rem;
 }
 
 .idea {
@@ -60,7 +60,7 @@ head,
   height: 100%;
 }
 
-.App {
+html {
   background: radial-gradient(#ffb74d, #ffa726);
 }
 
