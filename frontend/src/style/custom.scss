@@ -58,6 +58,7 @@ head,
 #root,
 .App {
   height: 100%;
+  min-height: -webkit-fill-available;
 }
 
 html {
