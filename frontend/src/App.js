@@ -8,7 +8,7 @@ const App = () => {
     <div className="App vh-100">
       <div className="container main-content">
         <div className="row justify-content-center">
-          <h1 id="main" className="text-center pt-3">
+          <h1 id="main" className="text-center">
             Skedoodle
           </h1>
         </div>
