@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { hot } from "react-hot-loader";
-import skedoodleImg from "./images/skedoodle.png";
 import { CodeLink, Idea, Definition } from "./components";
 
 const App = () => {
