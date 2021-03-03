@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development --open 'google chrome'",
+    "start": "webpack serve --mode development -o",
     "build": "webpack --mode production"
   },
   "keywords": [],
