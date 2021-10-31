@@ -7,6 +7,8 @@ Generate random doodle ideas!
 - Bootstrap
 - Express
 - MongoDB
+
+### Hosted on:
 - Nelify
 - Heroku
 
