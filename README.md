@@ -1,7 +1,9 @@
 # [skedoodle.art](https://www.skedoodle.art/)
+
 Generate random doodle ideas!
 
 ### Built with:
+
 - Node.js
 - React
 - Bootstrap
@@ -9,6 +11,6 @@ Generate random doodle ideas!
 - MongoDB
 
 ### Hosted on:
+
 - Nelify
 - Heroku
-
