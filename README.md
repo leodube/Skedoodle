@@ -13,4 +13,4 @@ Generate random doodle ideas!
 ### Hosted on:
 
 - Nelify
-- Heroku
+- Vercel
