@@ -19,6 +19,6 @@
     "mongoose": "^6.5.2",
     "mpath": "^0.8.4",
     "nodemon": "^2.0.14",
-    "nth-check": "^2.0.1"
+    "nth-check": "^2.1.1"
   }
 }
