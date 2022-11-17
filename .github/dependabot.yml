@@ -12,3 +12,6 @@ updates:
     # Add assignees
     assignees:
       - "leodube"
+    # Add reviewers
+    reviewers:
+      - "octocat"
