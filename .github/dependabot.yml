@@ -9,9 +9,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    target-branch: "develop"
+    labels:
+      - "dependencies"
     # Add assignees
     assignees:
-      - "leodube"
-    # Add reviewers
-    reviewers:
       - "leodube"
