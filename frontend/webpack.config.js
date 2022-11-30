@@ -50,10 +50,11 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
     port: 3000,
-    hotOnly: true,
+    hot: "only",
     proxy: {
       "/api": "http://localhost:5000",
     },
